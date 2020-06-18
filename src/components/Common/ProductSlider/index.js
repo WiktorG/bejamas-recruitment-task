@@ -6,6 +6,8 @@ import "@brainhubeu/react-carousel/lib/style.css"
 import ArrowLeft from "../../../images/arrow_left.svg"
 import ArrowRight from "../../../images/arrow_right.svg"
 
+import ProductCard from './../ProductCard';
+
 const ProductSlider = () => (
   <div sx={style.carouselWrapper}>
     <Carousel
@@ -26,10 +28,10 @@ const ProductSlider = () => (
         },
       }}
     >
-      <div sx={style.dummyElement}>123</div>
-      <div sx={style.dummyElement}>1234</div>
-      <div sx={style.dummyElement}>12345</div>
-      <div sx={style.dummyElement}>123456</div>
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
     </Carousel>
   </div>
 )
@@ -45,10 +47,5 @@ const style = {
   },
   arrowRight: {
     cursor: "pointer",
-  },
-  dummyElement: {
-    minHeight: 200,
-    width: 100,
-    backgroundColor: "#FBE067",
   },
 }

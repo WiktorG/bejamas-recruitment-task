@@ -1,8 +1,10 @@
 const WHITE = "#EEE"
 const LIGHT = "#C4C4C4"
+const GRAY = "#969393"
 const PRIMARY = "#1C042E"
 const ACCENT = "#AB528D"
 const SECONDARY = "#FBE067"
+const CARD_BACKGROUND = "#331F41"
 
 const headingTextStandards = {
   fontFamily: "heading",
@@ -39,11 +41,13 @@ export default {
   colors: {
     white: WHITE,
     light: LIGHT,
+    gray: GRAY,
     primary: PRIMARY,
     accent: ACCENT,
     secondary: SECONDARY,
     background: {
       primary: PRIMARY,
+      card: CARD_BACKGROUND,
     },
     text: {
       heading: WHITE,
