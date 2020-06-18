@@ -64,10 +64,10 @@ export default {
     },
     h1: {
       variant: "text.heading",
-      fontSize: [7, null, null, 9],
+      fontSize: [6, 7, null, 9],
     },
     h2: {
-      fontSize: 5,
+      fontSize: [4, 5],
       lineHeight: [1.22, 1.18, 1.02],
       variant: "text.heading",
     },
