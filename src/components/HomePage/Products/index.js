@@ -2,6 +2,8 @@
 import { jsx, Styled } from "theme-ui"
 import { Row, Col } from "../../Grid"
 
+import ProductSlider from "../../Common/ProductSlider"
+
 const HomepageProducts = () => (
   <section sx={{ paddingTop: [60, 60, 105] }}>
     <Row>
@@ -14,6 +16,11 @@ const HomepageProducts = () => (
           <br />
           among dev community
         </Styled.p>
+      </Col>
+    </Row>
+    <Row>
+      <Col>
+        <ProductSlider />
       </Col>
     </Row>
   </section>
