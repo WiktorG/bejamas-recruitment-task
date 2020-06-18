@@ -6,13 +6,13 @@ import "@brainhubeu/react-carousel/lib/style.css"
 import ArrowLeft from "../../../images/arrow_left.svg"
 import ArrowRight from "../../../images/arrow_right.svg"
 
-import ProductCard from './../ProductCard';
+import ProductCard from "./../ProductCard";
 
 const ProductSlider = () => (
   <div sx={style.carouselWrapper}>
     <Carousel
-      arrowLeft={<img src={ArrowLeft} sx={style.arrowLeft} />}
-      arrowRight={<img src={ArrowRight} sx={style.arrowRight} />}
+      // arrowLeft={<img src={ArrowLeft} sx={style.arrowLeft} />}
+      // arrowRight={<img src={ArrowRight} sx={style.arrowRight} />}
       slidesPerPage={4}
       infinite
       addArrowClickHandler
@@ -20,14 +20,15 @@ const ProductSlider = () => (
         768: {
           slidesPerPage: 1,
         },
-        980: {
+        992: {
           slidesPerPage: 2,
         },
-        1200: {
+        1360: {
           slidesPerPage: 3,
         },
       }}
     >
+      <ProductCard />
       <ProductCard />
       <ProductCard />
       <ProductCard />
