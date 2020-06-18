@@ -39,6 +39,10 @@ const styles = {
     ml: [null, null, null, "30px"],
     textAlign: ["center", null, "left"],
     textShadow: "1px 2px rgba(0, 0, 0, .2)",
+    fontSize: [],
+    br: {
+      display: ["none", "inherit"],
+    },
     "::after": {
       position: "absolute",
       content: `url("${HeroDecor}")`,
