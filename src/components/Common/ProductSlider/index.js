@@ -1,47 +1,55 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import Carousel from "@brainhubeu/react-carousel"
-import "@brainhubeu/react-carousel/lib/style.css"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
-import ArrowLeft from "../../../images/arrow_left.svg"
-import ArrowRight from "../../../images/arrow_right.svg"
-
-import ProductCard from "./../ProductCard";
+import ProductCard from "./../ProductCard"
 
 const ProductSlider = () => (
-  <div sx={style.carouselWrapper}>
-    <Carousel
-      // arrowLeft={<img src={ArrowLeft} sx={style.arrowLeft} />}
-      // arrowRight={<img src={ArrowRight} sx={style.arrowRight} />}
-      slidesPerPage={4}
+  <div sx={style.sliderWrapper}>
+    <Slider
+      sx={style.slider}
+      dots={false}
+      arrows={false}
+      slidesToShow={4}
+      slidesToScroll={1}
+      initialSlide={0}
       infinite
-      addArrowClickHandler
-      breakpoints={{
-        768: {
-          slidesPerPage: 1,
+      responsive={[{
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
         },
-        992: {
-          slidesPerPage: 2,
+      }, {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
         },
-        1360: {
-          slidesPerPage: 3,
+      }, {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
         },
-      }}
+      }]}
     >
       <ProductCard />
       <ProductCard />
       <ProductCard />
       <ProductCard />
       <ProductCard />
-    </Carousel>
+    </Slider>
   </div>
 )
 
 export default ProductSlider
 
 const style = {
-  carouselWrapper: {
+  sliderWrapper: {
     marginTop: [40, 64],
+  },
+  slider: {
+    width: "100%",
   },
   arrowLeft: {
     cursor: "pointer",
