@@ -9,7 +9,7 @@ export default {
     backgroundColor: "background.card",
     color: "inherit",
     textDecoration: "none",
-    width: "100%",
+    width: ["95%", null, null, "100%"],
     maxWidth: ["265px", null, "240px", null, null, "265px"],
     height: "273px",
     mx: "auto",

@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import { useRef } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
@@ -30,11 +31,25 @@ const ProductSlider = () => {
       }
     }
   }`)
+  const sliderRef = useRef()
+
+  const slideLeft = (e) => {
+    e.preventDefault()
+    sliderRef.current.slickPrev()
+  }
+
+  const slideRight = (e) => {
+    e.preventDefault()
+    sliderRef.current.slickNext()
+  }
 
   return (
     <div sx={styles.sliderWrapper}>
-      <img src={ArrowLeft} sx={styles.arrowLeft} />
+      <button sx={styles.arrowLeftWrapper} onClick={slideLeft}>
+        <img src={ArrowLeft} sx={styles.arrow} />
+      </button>
       <Slider
+        ref={sliderRef}
         dots={false}
         arrows={false}
         slidesToShow={4}
@@ -49,7 +64,7 @@ const ProductSlider = () => {
             slidesToShow: 3,
           },
         }, {
-          breakpoint: 992,
+          breakpoint: 991,
           settings: {
             slidesToShow: 2,
           },
@@ -70,7 +85,9 @@ const ProductSlider = () => {
           />
         ))}
       </Slider>
-      <img src={ArrowRight} sx={styles.arrowRight} />
+      <button sx={styles.arrowRightWrapper} onClick={slideRight}>
+        <img src={ArrowRight} sx={styles.arrow} />
+      </button>
     </div>
   )
 }
