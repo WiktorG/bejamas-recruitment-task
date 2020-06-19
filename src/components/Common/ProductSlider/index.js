@@ -81,7 +81,7 @@ const ProductSlider = () => {
             url={`/product/${node.frontmatter.slug}`}
             img={node.frontmatter.image.publicURL}
             title={node.frontmatter.name}
-            description={node.frontmatter.excerpt}
+            excerpt={node.frontmatter.excerpt}
           />
         ))}
       </Slider>

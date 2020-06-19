@@ -30,7 +30,7 @@ export default {
     marginTop: "37px",
     marginBottom: "10px",
   },
-  description: {
+  excerpt: {
     margin: 0,
     lineHeight: 1.2,
     fontSize: 1,
