@@ -1,4 +1,7 @@
-const initialState = {}
+const initialState = {
+  isVisible: false,
+  items: [],
+}
 
 function cartReducer(state = initialState, action) {
   switch (action.type) {
