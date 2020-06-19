@@ -3,25 +3,24 @@ export const CART_BORDER = "#F5F5F5"
 
 export default {
   cartWrapper: {
+    transition: "all 0.2s ease",
     position: "fixed",
-    opacity: 0,
-    pointerEvents: "none",
     top: 0,
     left: 0,
     width: "1",
     height: "100vh",
     zIndex: 1,
-    "::before": {
-      position: "absolute",
-      left: 0,
-      top: 0,
-      content: "\"\"",
-      display: "block",
-      width: "1",
-      height: "1",
-      backdropFilter: "blur(5px)",
-      zIndex: 0,
-    },
+  },
+  cartOverlay: {
+    transition: "none",
+    position: "absolute",
+    left: 0,
+    top: 0,
+    display: "block",
+    width: "1",
+    height: "1",
+    backdropFilter: "blur(5px)",
+    zIndex: 0,
   },
   cartContainer: {
     position: "relative",
