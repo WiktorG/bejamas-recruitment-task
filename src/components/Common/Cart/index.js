@@ -24,9 +24,7 @@ export default function Cart() {
       }}
     >
       <span
-        sx={{
-          ...styles.cartOverlay,
-        }}
+        sx={styles.cartOverlay}
       />
       <Container
         styles={styles.cartContainer}

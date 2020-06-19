@@ -2,9 +2,9 @@
 import { jsx, Styled } from "theme-ui"
 import { Row, Col } from "../../Grid"
 
-import styles from "./styles"
-
 import ProductSlider from "../../Common/ProductSlider"
+
+import styles from "./styles"
 
 const HomepageProducts = () => (
   <section sx={{ padding: ["60px 0", "60px 0", "105px 0"] }}>

@@ -6,12 +6,12 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-import styles from "./styles"
-
 import ArrowLeft from "./../../../images/icons/arrow_left.svg"
 import ArrowRight from "./../../../images/icons/arrow_right.svg"
 
 import ProductCard from "./../ProductCard"
+
+import styles from "./styles"
 
 export default function ProductSlider() {
   const data = useStaticQuery(graphql`{
