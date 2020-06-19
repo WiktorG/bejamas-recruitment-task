@@ -4,6 +4,8 @@ export const CART_BORDER = "#F5F5F5"
 export default {
   cartWrapper: {
     position: "fixed",
+    opacity: 0,
+    pointerEvents: "none",
     top: 0,
     left: 0,
     width: "1",
