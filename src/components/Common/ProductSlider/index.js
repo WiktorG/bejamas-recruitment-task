@@ -8,8 +8,8 @@ import "slick-carousel/slick/slick-theme.css"
 
 import styles from "./styles"
 
-import ArrowLeft from "./../../../images/arrow_left.svg"
-import ArrowRight from "./../../../images/arrow_right.svg"
+import ArrowLeft from "./../../../images/icons/arrow_left.svg"
+import ArrowRight from "./../../../images/icons/arrow_right.svg"
 
 import ProductCard from "./../ProductCard"
 

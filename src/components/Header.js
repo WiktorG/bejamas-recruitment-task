@@ -1,13 +1,18 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
+
 import { Container } from "../components/Grid"
+import CartIcon from "../components/Common/CartIcon"
 
 export default function Header() {
   return (
     <header sx={styles.header}>
       <Container
         sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: "1",
           maxWidth: [
             "100%",
             "552px",
@@ -22,14 +27,11 @@ export default function Header() {
         <Link to="/" sx={styles.mainLink}>
           JAM SHOP
         </Link>
+        <CartIcon />
       </Container>
     </header>
   )
 }
-
-Header.propTypes = {}
-
-Header.defaultProps = {}
 
 const styles = {
   header: {

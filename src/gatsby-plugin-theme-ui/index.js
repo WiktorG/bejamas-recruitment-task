@@ -5,6 +5,9 @@ const PRIMARY = "#1C042E"
 const ACCENT = "#AB528D"
 const SECONDARY = "#FBE067"
 const CARD_BACKGROUND = "#331F41"
+const CART_NUMBER_EMPTY = "#301346"
+const CART_NUMBER = "#AB528D"
+const CART_BACKGROUND = "#220538"
 
 const headingTextStandards = {
   fontFamily: "heading",
@@ -48,6 +51,9 @@ export default {
     background: {
       primary: PRIMARY,
       card: CARD_BACKGROUND,
+      cartNumberEmpty: CART_NUMBER_EMPTY,
+      cartNumber: CART_NUMBER,
+      cart: CART_BACKGROUND,
     },
     text: {
       heading: WHITE,
