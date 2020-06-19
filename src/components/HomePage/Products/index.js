@@ -2,6 +2,8 @@
 import { jsx, Styled } from "theme-ui"
 import { Row, Col } from "../../Grid"
 
+import styles from "./styles"
+
 import ProductSlider from "../../Common/ProductSlider"
 
 const HomepageProducts = () => (
@@ -27,21 +29,3 @@ const HomepageProducts = () => (
 )
 
 export default HomepageProducts
-
-const styles = {
-  headingWrapper: {
-    textAlign: ["center", null, "left"],
-    br: {
-      display: ["none", "inherit"],
-    },
-  },
-  heading: {
-    variant: "text.heading",
-    fontFamily: "body",
-    fontWeight: "bold",
-    marginBottom: "20px",
-  },
-  paragraph: {
-    margin: 0,
-  },
-}

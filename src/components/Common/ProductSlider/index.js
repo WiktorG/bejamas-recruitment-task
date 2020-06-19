@@ -5,6 +5,11 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
+import styles from "./styles"
+
+import ArrowLeft from "./../../../images/arrow_left.svg"
+import ArrowRight from "./../../../images/arrow_right.svg"
+
 import ProductCard from "./../ProductCard"
 
 const ProductSlider = () => {
@@ -27,13 +32,15 @@ const ProductSlider = () => {
   }`)
 
   return (
-    <div sx={style.sliderWrapper}>
+    <div sx={styles.sliderWrapper}>
+      <img src={ArrowLeft} sx={styles.arrowLeft} />
       <Slider
         dots={false}
         arrows={false}
         slidesToShow={4}
         slidesToScroll={1}
         initialSlide={0}
+        centerPadding={0}
         infinite
         draggable
         responsive={[{
@@ -63,20 +70,9 @@ const ProductSlider = () => {
           />
         ))}
       </Slider>
+      <img src={ArrowRight} sx={styles.arrowRight} />
     </div>
   )
 }
 
 export default ProductSlider
-
-const style = {
-  sliderWrapper: {
-    marginTop: [40, 64],
-  },
-  arrowLeft: {
-    cursor: "pointer",
-  },
-  arrowRight: {
-    cursor: "pointer",
-  },
-}
