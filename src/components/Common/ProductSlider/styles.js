@@ -3,6 +3,9 @@ export default {
     position: "relative",
     px: ["50px", null, "20px", null, 0],
     marginTop: [40, 64],
+    ".slick-slide": {
+      outline: "none",
+    },
   },
   arrow: {
     height: "auto",
