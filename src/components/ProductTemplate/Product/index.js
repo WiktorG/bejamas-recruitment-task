@@ -14,7 +14,7 @@ function Product({
 }) {
   return (
     <section sx={styles.productWrapper}>
-      <Row styles={{ justifyContent: "center", alignItems: "center" }}>
+      <Row styles={{ justifyContent: "center", alignItems: "center", width: ["1", null, null, null, "unset"] }}>
         <Col styles={styles.imgWrapper}>
           <img src={image.publicURL} alt="Dummy Product" sx={styles.img} />
         </Col>
