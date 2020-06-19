@@ -19,7 +19,13 @@ export default function ProductPage({ data }) {
     <Layout>
       <SEO title="Product" />
       <Container>
-        <Product />
+        <Product
+          name={name}
+          description={description}
+          price={price}
+          tag={tag}
+          image={image}
+        />
       </Container>
     </Layout>
   )

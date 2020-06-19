@@ -34,7 +34,7 @@ export default {
     margin: 0,
     lineHeight: 1.2,
     fontSize: 1,
-    paddingRight: "25px",
+    pr: "25px",
   },
   button: {
     position: "absolute",
