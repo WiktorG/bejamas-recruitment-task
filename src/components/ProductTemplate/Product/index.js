@@ -5,7 +5,7 @@ import { Row, Col } from "../../Grid"
 
 import styles from "./styles"
 
-function Product({
+export default function Product({
   name,
   description,
   price,
@@ -37,5 +37,3 @@ Product.propTypes = {
   tag: PropTypes.string.isRequired,
   image: PropTypes.object.isRequired,
 }
-
-export default Product

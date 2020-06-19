@@ -13,7 +13,7 @@ import ArrowRight from "./../../../images/arrow_right.svg"
 
 import ProductCard from "./../ProductCard"
 
-const ProductSlider = () => {
+export default function ProductSlider() {
   const data = useStaticQuery(graphql`{
     allMarkdownRemark {
       edges {
@@ -91,5 +91,3 @@ const ProductSlider = () => {
     </div>
   )
 }
-
-export default ProductSlider

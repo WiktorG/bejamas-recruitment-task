@@ -37,6 +37,7 @@ export default {
     pr: "25px",
   },
   button: {
+    outline: "none",
     position: "absolute",
     display: "block",
     variant: "button.primary",
