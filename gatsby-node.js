@@ -15,7 +15,6 @@ exports.createPages = async({ actions, graphql }) => {
 
   data.allMarkdownRemark.edges.forEach(edge => {
     const slug = edge.node.frontmatter.slug
-    console.log(slug)
     actions.createPage({
       path: `/product/${slug}`,
       component: require.resolve("./src/templates/product/index.js"),
