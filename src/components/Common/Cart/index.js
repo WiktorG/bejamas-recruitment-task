@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 import { useDispatch, useSelector } from "react-redux"
 
 import { closeCart } from "./../../../redux/actions/cartActions"
@@ -23,12 +23,24 @@ const CartItems = ({ items }) => items.map(({ img, name, price }, index) =>
 
 export default function Cart() {
   const dispatch = useDispatch()
+  const wrapperRef = useRef()
   const cartRef = useRef()
   const { isVisible, items } = useSelector(cartSelector)
 
-  const handleOverlayClick = (e) => {
-    dispatch(closeCart())
+  const handleClickOutside = (event) => {
+    if (wrapperRef.current && !cartRef.current.contains(event.target)) {
+      dispatch(closeCart())
+    }
   }
+
+  useEffect(() => {
+    if (isVisible) {
+      document.addEventListener("mousedown", handleClickOutside)
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside)
+      }
+    }
+  }, [isVisible])
 
   return (
     <div
@@ -37,6 +49,7 @@ export default function Cart() {
         opacity: isVisible ? 1 : 0,
         pointerEvents: isVisible ? "auto" : "none",
       }}
+      ref={wrapperRef}
     >
       <span sx={styles.cartOverlay} />
       <Container styles={styles.cartContainer}>

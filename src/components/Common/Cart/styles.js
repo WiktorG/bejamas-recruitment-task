@@ -10,6 +10,7 @@ export default {
     width: "1",
     height: "100vh",
     zIndex: 1,
+    fontFamily: "product",
   },
   cartOverlay: {
     transition: "none",
@@ -70,5 +71,6 @@ export default {
     textAlign: "left",
     paddingLeft: "14px",
     textTransform: "uppercase",
+    fontFamily: "body",
   },
 }

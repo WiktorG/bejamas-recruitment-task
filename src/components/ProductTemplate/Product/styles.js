@@ -6,7 +6,7 @@ export default {
     minHeight: "calc(100vh - 50px)",
     pt: "20px",
     pb: "50px",
-    fontFamily: "cart",
+    fontFamily: "product",
   },
   imgWrapper: {
     width: ["1", "1", "1/2"],
@@ -61,7 +61,7 @@ export default {
   },
   button: {
     variant: "button.primary",
-    fontFamily: "cart",
+    fontFamily: "product",
     fontSize: "13px",
     textTransform: "uppercase",
     py: "13px",
