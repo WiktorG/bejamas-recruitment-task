@@ -16,7 +16,7 @@ import styles from "./styles"
 export default function Cart() {
   const dispatch = useDispatch()
   const cartRef = useRef()
-  const { isVisible } = useSelector(cartSelector)
+  const { isVisible, items } = useSelector(cartSelector)
 
   const handleOverlayClick = (e) => {
     if (e.target !== cartRef.current) {

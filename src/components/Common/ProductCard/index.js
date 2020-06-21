@@ -1,14 +1,28 @@
 /** @jsx jsx */
 import { jsx, Styled } from "theme-ui"
 import PropTypes from "prop-types"
+import { useDispatch } from "react-redux"
 import { Link } from "gatsby"
+
+import { productAddToCart } from "./../../../redux/actions/cartActions"
 
 import styles from "./styles"
 
-export default function ProductCard({ url, img, title, excerpt }) {
+export default function ProductCard({ url, img, title, excerpt, price }) {
+  const dispatch = useDispatch()
+
   const handleClick = (e) => {
     e.preventDefault()
     e.stopPropagation()
+
+    const product = {
+      url,
+      img,
+      title,
+      price,
+    }
+
+    dispatch(productAddToCart(product))
   }
 
   return (

@@ -7,7 +7,10 @@ import { cart as cartSelector } from "./../../../redux/selectors/cartSelectors"
 
 import Icon from "../../../images/icons/cart.svg"
 
-import styles from "./styles"
+import styles, {
+  CART_NUMBER,
+  CART_NUMBER_EMPTY,
+} from "./styles"
 
 export default function CartIcon() {
   const dispatch = useDispatch()
@@ -22,7 +25,14 @@ export default function CartIcon() {
   return (
     <a href="#" onClick={handleClick} sx={styles.iconWrapper}>
       <img src={Icon} alt="cart icon" />
-      <span sx={{ ...styles.number }}>{itemsCount}</span>
+      <span
+        sx={{
+          ...styles.number,
+          backgroundColor: itemsCount > 0 ? CART_NUMBER : CART_NUMBER_EMPTY,
+        }}
+      >
+        {itemsCount}
+      </span>
     </a>
   )
 }

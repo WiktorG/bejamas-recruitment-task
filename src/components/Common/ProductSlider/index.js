@@ -82,6 +82,7 @@ export default function ProductSlider() {
             img={node.frontmatter.image.publicURL}
             title={node.frontmatter.name}
             excerpt={node.frontmatter.excerpt}
+            price={node.frontmatter.price}
           />
         ))}
       </Slider>

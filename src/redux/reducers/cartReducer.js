@@ -2,6 +2,7 @@ import {
   TOGGLE_CART,
   OPEN_CART,
   CLOSE_CART,
+  PRODUCT_ADD_TO_CART,
 } from "./../actions/cartActions"
 
 const initialState = {
@@ -25,6 +26,14 @@ function cartReducer(state = initialState, action) {
       return {
         ...state,
         isVisible: false,
+      }
+    case PRODUCT_ADD_TO_CART:
+      return {
+        ...state,
+        items: [
+          ...state.items,
+          action.product,
+        ],
       }
     default:
       return state
