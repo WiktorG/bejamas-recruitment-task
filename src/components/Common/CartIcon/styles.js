@@ -10,7 +10,14 @@ export default {
     textDecoration: "none",
   },
   icon: {
+    transition: "all 0.15s ease",
     m: 0,
+    "&:hover": {
+      transform: "scale(1.05)",
+    },
+    "&:active": {
+      transform: "scale(1.1)",
+    },
   },
   number: {
     position: "absolute",
