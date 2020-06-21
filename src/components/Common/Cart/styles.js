@@ -13,7 +13,6 @@ export default {
   },
 
   cartOverlay: {
-    transition: "none",
     position: "absolute",
     left: 0,
     top: 0,
@@ -31,7 +30,6 @@ export default {
   },
 
   cart: {
-    transition: "all 0.2s ease",
     position: "relative",
     display: "block",
     listStyle: "none",

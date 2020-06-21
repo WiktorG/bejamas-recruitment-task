@@ -10,8 +10,8 @@ export default {
     textDecoration: "none",
   },
   icon: {
-    transition: "all 0.15s ease",
     m: 0,
+    transition: "all 0.15s ease",
     "&:hover": {
       transform: "scale(1.05)",
     },
@@ -34,9 +34,9 @@ export default {
     color: "white",
   },
   angle: {
-    transition: "all 0.2s ease-in-out",
     position: "absolute",
     right: "0",
     m: 0,
+    transition: "all 0.2s ease-in-out",
   },
 }

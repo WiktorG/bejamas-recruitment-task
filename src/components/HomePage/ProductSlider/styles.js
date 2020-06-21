@@ -17,8 +17,8 @@ export default {
     position: "relative",
     height: "auto",
     width: ["50px", null, null, "55px", null, "60px", "65px"],
-    transition: "all 0.2s ease",
     borderRadius: "50%",
+    transition: "all 0.2s ease",
     "&:hover": {
       transform: "scale(1.02)",
       boxShadow: "0px 0px 15px rgba(0, 0, 0, 0.3)",
