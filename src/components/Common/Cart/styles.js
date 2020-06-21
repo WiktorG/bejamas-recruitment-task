@@ -3,7 +3,6 @@ export const CART_BORDER = "#F5F5F5"
 
 export default {
   cartWrapper: {
-    transition: "all 0.2s ease",
     position: "fixed",
     top: 0,
     left: 0,
@@ -20,7 +19,7 @@ export default {
     display: "block",
     width: "1",
     height: "1",
-    backdropFilter: "blur(5px)",
+    backdropFilter: "blur(10px)",
     zIndex: 0,
   },
   cartContainer: {
@@ -29,6 +28,7 @@ export default {
     pt: "50px",
   },
   cart: {
+    transition: "all 0.2s ease",
     display: "block",
     listStyle: "none",
     width: "1",

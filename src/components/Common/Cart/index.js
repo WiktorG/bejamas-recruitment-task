@@ -33,15 +33,6 @@ export default function Cart() {
     }
   }
 
-  useEffect(() => {
-    if (isVisible) {
-      document.addEventListener("mousedown", handleClickOutside)
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside)
-      }
-    }
-  }, [isVisible])
-
   return (
     <div
       sx={{
@@ -50,6 +41,7 @@ export default function Cart() {
         pointerEvents: isVisible ? "auto" : "none",
       }}
       ref={wrapperRef}
+      onClick={handleClickOutside}
     >
       <span sx={styles.cartOverlay} />
       <Container styles={styles.cartContainer}>

@@ -27,7 +27,14 @@ export default function Layout({ children }) {
         {children}
       </main>
       <footer />
-      <Global styles={() => ({ body: { overflowY: isVisible ? "hidden" : "scroll" } })} />
+      <Global
+        styles={() => ({
+          body: {
+            overflowY: isVisible ? "hidden" : "scroll",
+            height: isVisible ? "100vh" : "auto",
+          },
+        })}
+      />
     </>
   )
 }
