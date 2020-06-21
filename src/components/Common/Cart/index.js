@@ -1,8 +1,9 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import { useRef } from "react"
 import { useDispatch, useSelector } from "react-redux"
 
-import { toggleCart } from "./../../../redux/actions/cartActions"
+import { closeCart } from "./../../../redux/actions/cartActions"
 import { cart as cartSelector } from "./../../../redux/selectors/cartSelectors"
 
 import {
@@ -13,7 +14,15 @@ import {
 import styles from "./styles"
 
 export default function Cart() {
+  const dispatch = useDispatch()
+  const cartRef = useRef()
   const { isVisible } = useSelector(cartSelector)
+
+  const handleOverlayClick = (e) => {
+    if (e.target !== cartRef.current) {
+      dispatch(closeCart())
+    }
+  }
 
   return (
     <div
@@ -22,6 +31,7 @@ export default function Cart() {
         opacity: isVisible ? 1 : 0,
         pointerEvents: isVisible ? "auto" : "none",
       }}
+      onClick={handleOverlayClick}
     >
       <span
         sx={styles.cartOverlay}
@@ -30,7 +40,10 @@ export default function Cart() {
         styles={styles.cartContainer}
       >
         <Row>
-          <div sx={styles.cart}>
+          <div
+            sx={styles.cart}
+            ref={cartRef}
+          >
             <ul sx={styles.cartItems}>
               <li>123</li>
             </ul>
