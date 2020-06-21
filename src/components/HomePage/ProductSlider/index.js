@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css"
 import ArrowLeft from "./../../../images/icons/arrow_left.svg"
 import ArrowRight from "./../../../images/icons/arrow_right.svg"
 
-import ProductCard from "./../ProductCard"
+import ProductCard from "../../Common/ProductCard"
 
 import styles from "./styles"
 

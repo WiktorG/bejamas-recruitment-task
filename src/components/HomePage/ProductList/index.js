@@ -2,7 +2,7 @@
 import { jsx, Styled } from "theme-ui"
 import { Row, Col } from "../../Grid"
 
-import ProductSlider from "../../Common/ProductSlider"
+import ProductSlider from "../ProductSlider"
 
 import styles from "./styles"
 
