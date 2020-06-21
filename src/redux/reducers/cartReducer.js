@@ -6,7 +6,7 @@ import {
 } from "./../actions/cartActions"
 
 const initialState = {
-  isVisible: true,
+  isVisible: false,
   items: [],
 }
 
