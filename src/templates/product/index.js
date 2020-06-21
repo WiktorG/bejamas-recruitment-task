@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
-import Product from "../../components/ProductTemplate/Product"
+import Product from "../../components/Product"
 import { Container } from "../../components/Grid"
 
 export default function ProductPage({ data }) {

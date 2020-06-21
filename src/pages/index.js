@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Hero from "../components/HomePage/Hero"
-import Products from "../components/HomePage/Products"
+import ProductList from "../components/HomePage/ProductList"
 import { Container } from "../components/Grid"
 
 export default function IndexPage() {
@@ -12,7 +12,7 @@ export default function IndexPage() {
       <SEO title="Home" />
       <Container>
         <Hero />
-        <Products />
+        <ProductList />
       </Container>
     </Layout>
   )
