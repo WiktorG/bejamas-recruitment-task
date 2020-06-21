@@ -10,6 +10,7 @@ import { closeCart } from "./../../redux/actions/cartActions"
 import { cart as cartSelector } from "./../../redux/selectors/cartSelectors"
 
 import Header from "../Header"
+import Cart from "../Common/Cart"
 
 export default function Layout({ children }) {
   const dispatch = useDispatch()
@@ -23,6 +24,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Header />
+      <Cart />
       <main sx={{ paddingTop: 50 }}>
         {children}
       </main>
