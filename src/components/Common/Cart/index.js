@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { useEffect, useRef } from "react"
+import { useRef } from "react"
 import { useDispatch, useSelector } from "react-redux"
 
 import { closeCart } from "./../../../redux/actions/cartActions"
