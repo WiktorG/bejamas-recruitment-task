@@ -152,6 +152,14 @@ export default {
       fontWeight: "bold",
       cursor: "pointer",
       borderRadius: "4px",
+      transition: "all 0.2s ease",
+      "&:hover": {
+        boxShadow: "0 0 15px rgba(0, 0, 0, 0.3)",
+      },
+      "&:active": {
+        color: "accent",
+        backgroundColor: "white",
+      },
     },
   },
   sizes: {

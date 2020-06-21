@@ -31,6 +31,7 @@ export default {
   },
 
   cart: {
+    transition: "all 0.2s ease",
     position: "relative",
     display: "block",
     listStyle: "none",
@@ -45,9 +46,9 @@ export default {
     m: 0,
     p: 0,
     ml: "auto",
-    mt: "18px",
+    mt: ["25px", null, null, "18px"],
     pt: "37px",
-    pb: "23px",
+    pb: "58px",
   },
 
   cartItems: {
@@ -55,6 +56,8 @@ export default {
     flexDirection: "column",
     padding: 0,
     margin: 0,
+    maxHeight: ["320px", null, null, "380px"],
+    overflowY: "scroll",
   },
 
   cartItem: {

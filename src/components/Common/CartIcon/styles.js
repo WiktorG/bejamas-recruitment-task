@@ -3,8 +3,14 @@ export const CART_NUMBER = "#AB528D"
 
 export default {
   iconWrapper: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     position: "relative",
     textDecoration: "none",
+  },
+  icon: {
+    m: 0,
   },
   number: {
     position: "absolute",
@@ -19,5 +25,11 @@ export default {
     borderRadius: "6px",
     backgroundColor: CART_NUMBER_EMPTY,
     color: "white",
+  },
+  angle: {
+    transition: "all 0.2s ease-in-out",
+    position: "absolute",
+    right: "0",
+    m: 0,
   },
 }

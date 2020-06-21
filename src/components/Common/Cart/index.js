@@ -46,7 +46,14 @@ export default function Cart() {
       <span sx={styles.cartOverlay} />
       <Container styles={styles.cartContainer}>
         <Row>
-          <div sx={styles.cart} ref={cartRef}>
+          <div
+            sx={{
+              ...styles.cart,
+              opacity: isVisible ? 1 : 0,
+
+            }}
+            ref={cartRef}
+          >
             <ul sx={styles.cartItems}>
               <CartItems items={items} />
             </ul>

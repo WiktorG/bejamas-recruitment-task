@@ -13,6 +13,7 @@ export default function Header() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          alignContent: "center",
           width: "1",
           maxWidth: [
             "100%",

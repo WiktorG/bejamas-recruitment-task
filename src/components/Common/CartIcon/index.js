@@ -6,6 +6,7 @@ import { toggleCart } from "./../../../redux/actions/cartActions"
 import { cart as cartSelector } from "./../../../redux/selectors/cartSelectors"
 
 import Icon from "../../../images/icons/cart.svg"
+import AngleDown from "../../../images/icons/angle_up.svg"
 
 import styles, {
   CART_NUMBER,
@@ -14,7 +15,7 @@ import styles, {
 
 export default function CartIcon() {
   const dispatch = useDispatch()
-  const { items } = useSelector(cartSelector)
+  const { isVisible, items } = useSelector(cartSelector)
   const itemsCount = items.length
 
   const handleClick = (e) => {
@@ -26,7 +27,7 @@ export default function CartIcon() {
 
   return (
     <a href="#" onClick={handleClick} sx={styles.iconWrapper}>
-      <img src={Icon} alt="cart icon" />
+      <img src={Icon} alt="cart icon" sx={styles.icon} />
       <span
         sx={{
           ...styles.number,
@@ -35,6 +36,14 @@ export default function CartIcon() {
       >
         {itemsCount}
       </span>
+      <img
+        src={AngleDown}
+        alt="arrow"
+        sx={{
+          ...styles.angle,
+          transform: `translateX(20px) ${isVisible ? "rotate(0)" : "rotate(180deg)"}`,
+        }}
+      />
     </a>
   )
 }
