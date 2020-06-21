@@ -22,11 +22,11 @@ export default {
     borderWidth: 3,
     borderStyle: "solid",
   },
-  image: {
+  img: {
     maxHeight: "92px",
     mx: "auto",
   },
-  title: {
+  name: {
     fontFamily: "body",
     fontWeight: "bold",
     textTransform: "uppercase",

@@ -8,7 +8,7 @@ import { productAddToCart } from "./../../../redux/actions/cartActions"
 
 import styles from "./styles"
 
-export default function ProductCard({ url, img, title, excerpt, price }) {
+export default function ProductCard({ url, img, name, excerpt, price }) {
   const dispatch = useDispatch()
 
   const handleClick = (e) => {
@@ -16,9 +16,8 @@ export default function ProductCard({ url, img, title, excerpt, price }) {
     e.stopPropagation()
 
     const product = {
-      url,
       img,
-      title,
+      name,
       price,
     }
 
@@ -27,8 +26,8 @@ export default function ProductCard({ url, img, title, excerpt, price }) {
 
   return (
     <Link sx={styles.card} to={url}>
-      <img src={img} sx={styles.image} />
-      <Styled.h4 sx={styles.title}>{title}</Styled.h4>
+      <img src={img} sx={styles.img} />
+      <Styled.h4 sx={styles.name}>{name}</Styled.h4>
       <Styled.p sx={styles.excerpt}>{excerpt}</Styled.p>
       <button sx={styles.button} onClick={handleClick}>+</button>
     </Link>
@@ -38,6 +37,6 @@ export default function ProductCard({ url, img, title, excerpt, price }) {
 ProductCard.propTypes = {
   url: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   excerpt: PropTypes.string.isRequired,
 }

@@ -10,20 +10,38 @@ export default function Product({
   description,
   price,
   tag,
-  image,
+  img,
 }) {
+  const handleClick = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+
+    const product = {
+      img,
+      name,
+      price,
+    }
+
+    console.log(product)
+  }
+
   return (
     <section sx={styles.productWrapper}>
       <Row styles={{ justifyContent: "center", alignItems: "center", width: "1" }}>
         <Col styles={styles.imgWrapper}>
-          <img src={image.publicURL} alt="Dummy Product" sx={styles.img} />
+          <img src={img} alt="product image" sx={styles.img} />
         </Col>
         <Col styles={styles.infoWrapper}>
           <span sx={styles.tag}>{tag}</span>
           <h1 sx={styles.name}>{name}</h1>
           <Styled.p sx={styles.description}>{description}</Styled.p>
           <span sx={styles.price}>{`$${price}`}</span>
-          <button sx={styles.button}>Add to Cart</button>
+          <button
+            sx={styles.button}
+            onClick={handleClick}
+          >
+            Add to Cart
+          </button>
         </Col>
       </Row>
     </section>
@@ -35,5 +53,5 @@ Product.propTypes = {
   description: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   tag: PropTypes.string.isRequired,
-  image: PropTypes.object.isRequired,
+  img: PropTypes.object.isRequired,
 }

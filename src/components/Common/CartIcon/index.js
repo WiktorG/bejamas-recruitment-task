@@ -19,7 +19,9 @@ export default function CartIcon() {
 
   const handleClick = (e) => {
     e.preventDefault()
-    dispatch(toggleCart())
+    if (itemsCount > 0) {
+      dispatch(toggleCart())
+    }
   }
 
   return (

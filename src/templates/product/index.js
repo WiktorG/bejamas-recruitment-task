@@ -24,7 +24,7 @@ export default function ProductPage({ data }) {
           description={description}
           price={price}
           tag={tag}
-          image={image}
+          img={image.publicURL}
         />
       </Container>
     </Layout>
@@ -35,6 +35,7 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(frontmatter: {slug: {eq: $slug}}) {
       frontmatter {
+        slug
         name
         description
         price

@@ -80,7 +80,7 @@ export default function ProductSlider() {
             key={i}
             url={`/product/${node.frontmatter.slug}`}
             img={node.frontmatter.image.publicURL}
-            title={node.frontmatter.name}
+            name={node.frontmatter.name}
             excerpt={node.frontmatter.excerpt}
             price={node.frontmatter.price}
           />
