@@ -1,5 +1,3 @@
-export const CARD_BACKGROUND = "#331F41"
-
 export default {
   card: {
     position: "relative",
@@ -8,7 +6,7 @@ export default {
     justifyContent: "center",
     alignItems: "flex-start",
     alignContent: "center",
-    backgroundColor: CARD_BACKGROUND,
+    backgroundColor: "background.card",
     color: "inherit",
     textDecoration: "none",
     width: ["95%", null, null, "100%"],
@@ -18,8 +16,9 @@ export default {
     px: "20px",
     pt: "32px",
     pb: "40px",
-    borderColor: "gray",
-    borderWidth: 3,
+    borderColor: "border.card",
+    borderWidth: "3px",
+    borderRadius: "2px",
     borderStyle: "solid",
   },
 

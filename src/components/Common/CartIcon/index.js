@@ -31,7 +31,7 @@ export default function CartIcon() {
       <span
         sx={{
           ...styles.number,
-          backgroundColor: itemsCount > 0 ? CART_NUMBER : CART_NUMBER_EMPTY,
+          backgroundColor: itemsCount > 0 ? "background.badge" : "background.badgeEmpty",
         }}
       >
         {itemsCount}

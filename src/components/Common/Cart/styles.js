@@ -1,6 +1,3 @@
-export const CART_BACKGROUND = "#220538"
-export const CART_BORDER = "#F5F5F5"
-
 export default {
   cartWrapper: {
     position: "fixed",
@@ -36,8 +33,8 @@ export default {
     width: "1",
     maxWidth: "281px",
     minHeight: "276px",
-    backgroundColor: CART_BACKGROUND,
-    borderColor: CART_BORDER,
+    backgroundColor: "background.cart",
+    borderColor: "border.cart",
     borderWidth: "3px",
     borderStyle: "solid",
     borderRadius: "4px",

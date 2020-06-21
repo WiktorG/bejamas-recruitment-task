@@ -1,6 +1,3 @@
-export const CART_NUMBER_EMPTY = "#301346"
-export const CART_NUMBER = "#AB528D"
-
 export default {
   iconWrapper: {
     display: "flex",
@@ -32,7 +29,7 @@ export default {
     height: "13px",
     width: "12px",
     borderRadius: "6px",
-    backgroundColor: CART_NUMBER_EMPTY,
+    backgroundColor: "background.badgeEmpty",
     color: "white",
   },
 

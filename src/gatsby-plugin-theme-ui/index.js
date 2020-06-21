@@ -1,9 +1,15 @@
 const WHITE = "#EEE"
 const LIGHT = "#C4C4C4"
-const GRAY = "#969393"
 const PRIMARY = "#1C042E"
 const ACCENT = "#AB528D"
 const SECONDARY = "#FBE067"
+
+const CARD_BACKGROUND = "#331F41"
+const CART_BACKGROUND = "#220538"
+const BADGE_BACKGROUND = "#AB528D"
+const BADGE_BACKGROUND_EMPTY = "#301346"
+const CARD_BORDER = "#969393"
+const CART_BORDER = "#F5F5F5"
 
 const headingTextStandards = {
   fontFamily: "heading",
@@ -41,12 +47,19 @@ export default {
   colors: {
     white: WHITE,
     light: LIGHT,
-    gray: GRAY,
     primary: PRIMARY,
     accent: ACCENT,
     secondary: SECONDARY,
     background: {
       primary: PRIMARY,
+      cart: CART_BACKGROUND,
+      card: CARD_BACKGROUND,
+      badge: BADGE_BACKGROUND,
+      badgeEmpty: BADGE_BACKGROUND_EMPTY,
+    },
+    border: {
+      cart: CART_BORDER,
+      card: CARD_BORDER,
     },
     text: {
       heading: WHITE,
