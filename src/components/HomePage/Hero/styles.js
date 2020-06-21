@@ -7,10 +7,8 @@ export default {
     ml: [null, null, null, "30px"],
     textAlign: ["center", null, "left"],
     textShadow: "1px 2px rgba(0, 0, 0, .2)",
-    fontSize: [],
-    br: {
-      display: ["none", "inherit"],
-    },
+    fontSize: [5, null, null, null, "auto"],
+    mb: [null, null, null, "50px"],
     "::after": {
       position: "absolute",
       content: `url("${HeroDecor}")`,
@@ -25,8 +23,9 @@ export default {
 
   imgWrapper: {
     width: ["1", "1", "2/5", null, 450],
+    maxWidth: ["300px", null, null, "unset"],
     textAlign: ["center", "center", "left"],
-    order: [2, 2, 1],
+    order: [1, 1, 1],
   },
 
   leadWrapper: {
@@ -35,7 +34,7 @@ export default {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    order: [1, 1, 2],
+    order: [2, 2, 1],
     mb: ["65px", "65px", 0],
   },
 
@@ -45,5 +44,11 @@ export default {
     right: 0,
     display: ["none", null, "block"],
     zIndex: -1,
+  },
+
+  button: {
+    variant: "button.primary",
+    mx: ["auto", null, 0],
+    fontSize: [1, null, null, "auto"],
   },
 }

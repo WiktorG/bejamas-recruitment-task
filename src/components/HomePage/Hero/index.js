@@ -20,7 +20,7 @@ function HomepageHero() {
             <br />
             on boring things
           </Styled.h1>
-          <button sx={{ variant: "button.primary", mx: ["auto", null, 0] }}>
+          <button sx={styles.button}>
             GO EXPLORE
           </button>
         </Col>
