@@ -50,6 +50,7 @@ export default function Cart() {
             <ul sx={styles.cartItems}>
               <CartItems items={items} />
             </ul>
+            <button sx={styles.button}>Submit</button>
           </div>
         </Row>
       </Container>

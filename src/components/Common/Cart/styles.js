@@ -11,6 +11,7 @@ export default {
     zIndex: 1,
     fontFamily: "product",
   },
+
   cartOverlay: {
     transition: "none",
     position: "absolute",
@@ -22,13 +23,15 @@ export default {
     backdropFilter: "blur(10px)",
     zIndex: 0,
   },
+
   cartContainer: {
     position: "relative",
     zIndex: 1,
     pt: "50px",
   },
+
   cart: {
-    transition: "all 0.2s ease",
+    position: "relative",
     display: "block",
     listStyle: "none",
     width: "1",
@@ -46,12 +49,14 @@ export default {
     pt: "37px",
     pb: "23px",
   },
+
   cartItems: {
     display: "flex",
     flexDirection: "column",
     padding: 0,
     margin: 0,
   },
+
   cartItem: {
     display: "flex",
     flexDirection: "row",
@@ -62,15 +67,32 @@ export default {
     pl: "18px",
     pr: "28px",
   },
+
   productImg: {
     width: "30px",
     mb: 0,
   },
+
   productName: {
     width: "1",
     textAlign: "left",
     paddingLeft: "14px",
     textTransform: "uppercase",
     fontFamily: "body",
+  },
+
+  button: {
+    position: "absolute",
+    right: 0,
+    bottom: 0,
+    variant: "button.primary",
+    fontFamily: "product",
+    fontSize: "13px",
+    py: "7px",
+    px: "30px",
+    mr: "28px",
+    mb: "20px",
+    borderRadius: 0,
+    textTransform: "uppercase",
   },
 }
