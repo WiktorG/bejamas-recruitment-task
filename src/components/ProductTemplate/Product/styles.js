@@ -9,7 +9,7 @@ export default {
     fontFamily: "cart",
   },
   imgWrapper: {
-    width: ["1", "1", "1/2", "2/5", null, "1/2"],
+    width: ["1", "1", "1/2"],
     textAlign: ["center", "center", "right"],
   },
   img: {
@@ -22,7 +22,7 @@ export default {
     display: "flex",
     textAlign: ["center", "center", "left"],
     flexDirection: "column",
-    width: ["1", "1", "1/2", "3/5", null, "1/2"],
+    width: ["1", "1", "1/2"],
     mt: ["20px", null, null, 0],
     pl: ["20px", 0, 0, "55px"],
     pr: ["20px", 0],
@@ -47,7 +47,7 @@ export default {
     width: "1",
     my: 0,
     mx: ["auto", null, "unset"],
-    fontSize: [1, null, "18px"],
+    fontSize: [1, null, 2, null, "18px"],
     lineHeight: 1.35,
   },
   price: {
@@ -55,7 +55,7 @@ export default {
     color: "white",
     fontWeight: "bold",
     fontSize: [2, null, null, "22px"],
-    transform: [null, null, "translateX(-7px)"],
+    transform: [null, null, "translateX(-11px)"],
     mt: ["15px", null, null, "20px"],
     mb: ["15px", null, null, "20px"],
   },

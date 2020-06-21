@@ -1,7 +1,10 @@
 /** @jsx jsx */
 import { jsx, Styled } from "theme-ui"
 import PropTypes from "prop-types"
+import { useDispatch } from "react-redux"
 import { Row, Col } from "../../Grid"
+
+import { productAddToCart } from "./../../../redux/actions/cartActions"
 
 import styles from "./styles"
 
@@ -12,6 +15,8 @@ export default function Product({
   tag,
   img,
 }) {
+  const dispatch = useDispatch()
+
   const handleClick = (e) => {
     e.preventDefault()
     e.stopPropagation()
@@ -22,7 +27,7 @@ export default function Product({
       price,
     }
 
-    console.log(product)
+    dispatch(productAddToCart(product))
   }
 
   return (

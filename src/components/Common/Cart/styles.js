@@ -45,4 +45,30 @@ export default {
     pt: "37px",
     pb: "23px",
   },
+  cartItems: {
+    display: "flex",
+    flexDirection: "column",
+    padding: 0,
+    margin: 0,
+  },
+  cartItem: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    fontSize: 0,
+    fontWeight: "bold",
+    color: "white",
+    pl: "18px",
+    pr: "28px",
+  },
+  productImg: {
+    width: "30px",
+    mb: 0,
+  },
+  productName: {
+    width: "1",
+    textAlign: "left",
+    paddingLeft: "14px",
+    textTransform: "uppercase",
+  },
 }

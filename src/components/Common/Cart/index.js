@@ -13,15 +13,21 @@ import {
 
 import styles from "./styles"
 
+const CartItems = ({ items }) => items.map(({ img, name, price }, index) =>
+  <li key={index} sx={styles.cartItem}>
+    <img src={img} sx={styles.productImg} />
+    <span sx={styles.productName}>{name} #{index + 1}</span>
+    <span>{price}$</span>
+  </li>,
+)
+
 export default function Cart() {
   const dispatch = useDispatch()
   const cartRef = useRef()
   const { isVisible, items } = useSelector(cartSelector)
 
   const handleOverlayClick = (e) => {
-    if (e.target !== cartRef.current) {
-      dispatch(closeCart())
-    }
+    dispatch(closeCart())
   }
 
   return (
@@ -31,14 +37,13 @@ export default function Cart() {
         opacity: isVisible ? 1 : 0,
         pointerEvents: isVisible ? "auto" : "none",
       }}
-      onClick={handleOverlayClick}
     >
       <span sx={styles.cartOverlay} />
       <Container styles={styles.cartContainer}>
         <Row>
           <div sx={styles.cart} ref={cartRef}>
             <ul sx={styles.cartItems}>
-              <li>123</li>
+              <CartItems items={items} />
             </ul>
           </div>
         </Row>
