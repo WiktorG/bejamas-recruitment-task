@@ -1,4 +1,4 @@
-import HeroDecor from "../../../images/elements/hero_decor.svg"
+import HeroDecor from "images/elements/hero_decor.svg"
 
 export default {
   heading: {

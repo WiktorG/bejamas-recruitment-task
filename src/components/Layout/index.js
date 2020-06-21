@@ -6,11 +6,11 @@ import PropTypes from "prop-types"
 import { useSelector, useDispatch } from "react-redux"
 import { Global } from "@emotion/core"
 
-import { closeCart } from "./../../redux/actions/cartActions"
-import { cart as cartSelector } from "./../../redux/selectors/cartSelectors"
+import { closeCart } from "redux/actions/cartActions"
+import { cart as cartSelector } from "redux/selectors/cartSelectors"
 
-import Header from "../Header"
-import Cart from "../Common/Cart"
+import Header from "components/Header"
+import Cart from "components/Common/Cart"
 
 export default function Layout({ children }) {
   const dispatch = useDispatch()

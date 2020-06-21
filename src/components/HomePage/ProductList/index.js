@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx, Styled } from "theme-ui"
-import { Row, Col } from "../../Grid"
+import { Row, Col } from "components/Grid"
 
-import ProductSlider from "../ProductSlider"
+import ProductSlider from "components/HomePage/ProductSlider"
 
 import styles from "./styles"
 

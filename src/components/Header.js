@@ -2,8 +2,8 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 
-import { Container } from "../components/Grid"
-import CartIcon from "../components/Common/CartIcon"
+import { Container } from "components/Grid"
+import CartIcon from "components/Common/CartIcon"
 
 export default function Header() {
   return (

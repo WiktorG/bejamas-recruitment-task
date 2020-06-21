@@ -3,9 +3,9 @@ import { jsx, Styled } from "theme-ui"
 import PropTypes from "prop-types"
 import { useDispatch } from "react-redux"
 
-import { productAddToCart } from "../../redux/actions/cartActions"
+import { productAddToCart } from "redux/actions/cartActions"
 
-import { Row, Col } from "../Grid"
+import { Row, Col } from "components/Grid"
 
 import styles from "./styles"
 

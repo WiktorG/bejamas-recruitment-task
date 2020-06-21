@@ -2,11 +2,11 @@
 import { jsx } from "theme-ui"
 import { useDispatch, useSelector } from "react-redux"
 
-import { toggleCart } from "./../../../redux/actions/cartActions"
-import { cart as cartSelector } from "./../../../redux/selectors/cartSelectors"
+import { toggleCart } from "redux/actions/cartActions"
+import { cart as cartSelector } from "redux/selectors/cartSelectors"
 
-import Icon from "../../../images/icons/cart.svg"
-import AngleDown from "../../../images/icons/angle_up.svg"
+import Icon from "images/icons/cart.svg"
+import AngleDown from "images/icons/angle_up.svg"
 
 import styles, {
   CART_NUMBER,

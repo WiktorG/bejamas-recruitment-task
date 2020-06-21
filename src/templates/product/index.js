@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../../components/Layout"
-import SEO from "../../components/SEO"
-import Product from "../../components/ProductPage"
-import { Container } from "../../components/Grid"
+import Layout from "components/Layout"
+import SEO from "components/SEO"
+import Product from "components/ProductPage"
+import { Container } from "components/Grid"
 
 export default function ProductPage({ data }) {
   const {

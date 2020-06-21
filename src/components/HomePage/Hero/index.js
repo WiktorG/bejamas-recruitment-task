@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { jsx, Styled } from "theme-ui"
-import { Row, Col } from "../../Grid"
+import { Row, Col } from "components/Grid"
 
-import HeroBackground from "../../../images/elements/hero_background.svg"
-import HeroImage from "../../../images/elements/monitor.svg"
+import HeroBackground from "images/elements/hero_background.svg"
+import HeroImage from "images/elements/monitor.svg"
 
 import styles from "./styles"
 

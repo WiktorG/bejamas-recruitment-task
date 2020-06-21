@@ -3,13 +3,13 @@ import { jsx } from "theme-ui"
 import { useRef } from "react"
 import { useDispatch, useSelector } from "react-redux"
 
-import { closeCart } from "./../../../redux/actions/cartActions"
-import { cart as cartSelector } from "./../../../redux/selectors/cartSelectors"
+import { closeCart } from "redux/actions/cartActions"
+import { cart as cartSelector } from "redux/selectors/cartSelectors"
 
 import {
   Container,
   Row,
-} from "../../Grid"
+} from "components/Grid"
 
 import styles from "./styles"
 
