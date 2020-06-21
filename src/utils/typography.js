@@ -6,7 +6,6 @@ const typography = new Typography({
     styles: [
       "400",
       "700",
-      "800",
     ],
   }],
 })
