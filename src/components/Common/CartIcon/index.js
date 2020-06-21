@@ -8,10 +8,7 @@ import { cart as cartSelector } from "redux/selectors/cartSelectors"
 import Icon from "images/icons/cart.svg"
 import AngleDown from "images/icons/angle_up.svg"
 
-import styles, {
-  CART_NUMBER,
-  CART_NUMBER_EMPTY,
-} from "./styles"
+import styles from "./styles"
 
 export default function CartIcon() {
   const dispatch = useDispatch()
