@@ -9,6 +9,7 @@ export default {
     position: "relative",
     textDecoration: "none",
   },
+
   icon: {
     m: 0,
     transition: "all 0.15s ease",
@@ -19,6 +20,7 @@ export default {
       transform: "scale(1.1)",
     },
   },
+
   number: {
     position: "absolute",
     right: "-4px",
@@ -33,6 +35,7 @@ export default {
     backgroundColor: CART_NUMBER_EMPTY,
     color: "white",
   },
+
   angle: {
     position: "absolute",
     right: "0",

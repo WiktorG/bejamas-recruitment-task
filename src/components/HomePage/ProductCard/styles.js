@@ -22,10 +22,12 @@ export default {
     borderWidth: 3,
     borderStyle: "solid",
   },
+
   img: {
     maxHeight: "92px",
     mx: "auto",
   },
+
   name: {
     fontFamily: "body",
     fontWeight: "bold",
@@ -34,12 +36,14 @@ export default {
     marginTop: "15px",
     marginBottom: "10px",
   },
+
   excerpt: {
     margin: 0,
     lineHeight: 1.2,
     fontSize: 1,
     pr: "25px",
   },
+
   button: {
     outline: "none",
     position: "absolute",
@@ -55,4 +59,5 @@ export default {
     right: "7px",
     bottom: "7px",
   },
+
 }

@@ -8,16 +8,19 @@ export default {
     pb: "50px",
     fontFamily: "product",
   },
+
   imgWrapper: {
     width: ["1", "1", "1/2"],
     textAlign: ["center", "center", "right"],
   },
+
   img: {
     width: "1",
     maxWidth: ["200px", "230px", "250px", "340px"],
     maxHeight: "360px",
     objectFit: "contain",
   },
+
   infoWrapper: {
     display: "flex",
     textAlign: ["center", "center", "left"],
@@ -27,11 +30,13 @@ export default {
     pl: ["20px", 0, 0, "55px"],
     pr: ["20px", 0],
   },
+
   tag: {
     textTransform: "uppercase",
     color: "secondary",
     fontSize: [0, null, null, null, 1],
   },
+
   name: {
     variant: "heading",
     fontFamily: "inherit",
@@ -41,6 +46,7 @@ export default {
     mt: "10px",
     mb: ["15px", null, null, "25px"],
   },
+
   description: {
     fontFamily: "inherit",
     maxWidth: "410px",
@@ -50,6 +56,7 @@ export default {
     fontSize: [1, null, 2, null, "18px"],
     lineHeight: 1.35,
   },
+
   price: {
     fontFamily: "inherit",
     color: "white",
@@ -59,6 +66,7 @@ export default {
     mt: ["15px", null, null, "20px"],
     mb: ["15px", null, null, "20px"],
   },
+
   button: {
     variant: "button.primary",
     fontFamily: "product",
@@ -68,4 +76,5 @@ export default {
     px: "32px",
     mx: ["auto", null, "unset"],
   },
+
 }

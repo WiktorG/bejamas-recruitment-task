@@ -45,10 +45,12 @@ const styles = {
     background: "transparent",
     zIndex: "2",
   },
+
   mainLink: {
     variant: "text.link",
     color: "white",
     fontWeight: "bold",
     fontSize: 22,
   },
+
 }

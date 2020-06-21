@@ -13,6 +13,7 @@ export default {
       mx: ["20px", null, null, null, "15px", null, 0],
     },
   },
+
   arrow: {
     position: "relative",
     height: "auto",
@@ -25,8 +26,9 @@ export default {
     },
     "&:active": {
       transform: "scale(1.06)",
-    }
+    },
   },
+
   arrowLeftWrapper: {
     background: "none",
     border: "none",
@@ -38,6 +40,7 @@ export default {
     cursor: "pointer",
     outline: "none",
   },
+
   arrowRightWrapper: {
     background: "none",
     border: "none",
