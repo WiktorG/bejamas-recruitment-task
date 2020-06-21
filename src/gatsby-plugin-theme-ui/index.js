@@ -26,6 +26,7 @@ export default {
   fonts: {
     heading: "Georgia, \"Times New Roman\", Times, serif",
     body: "Montserrat, \"Helvetica Neue\", Arial, sans-serif",
+    cart: "Roboto, \"Helvetica Neue\", Arial, sans-serif",
   },
   lineHeights: {
     body: 1.5,
