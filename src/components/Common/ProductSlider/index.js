@@ -52,12 +52,12 @@ export default function ProductSlider() {
         ref={sliderRef}
         dots={false}
         arrows={false}
+        draggable={false}
         slidesToShow={4}
         slidesToScroll={1}
         initialSlide={0}
         centerPadding={0}
         infinite
-        draggable
         responsive={[{
           breakpoint: 1200,
           settings: {

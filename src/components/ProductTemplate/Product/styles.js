@@ -60,9 +60,10 @@ export default {
     mb: ["15px", null, null, "20px"],
   },
   button: {
-    fontFamily: "inherit",
     variant: "button.primary",
-    fontSize: 0,
+    fontFamily: "cart",
+    fontSize: "13px",
+    textTransform: "uppercase",
     py: "13px",
     px: "32px",
     mx: ["auto", null, "unset"],
