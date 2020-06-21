@@ -33,17 +33,10 @@ export default function Cart() {
       }}
       onClick={handleOverlayClick}
     >
-      <span
-        sx={styles.cartOverlay}
-      />
-      <Container
-        styles={styles.cartContainer}
-      >
+      <span sx={styles.cartOverlay} />
+      <Container styles={styles.cartContainer}>
         <Row>
-          <div
-            sx={styles.cart}
-            ref={cartRef}
-          >
+          <div sx={styles.cart} ref={cartRef}>
             <ul sx={styles.cartItems}>
               <li>123</li>
             </ul>
