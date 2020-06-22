@@ -17,7 +17,8 @@ export default function CartIcon() {
 
   const handleClick = (e) => {
     e.preventDefault()
-    if (itemsCount > 0) {
+    e.stopPropagation()
+    if (items.length > 0) {
       dispatch(toggleCart())
     }
   }

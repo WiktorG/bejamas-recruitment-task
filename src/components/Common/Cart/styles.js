@@ -16,6 +16,7 @@ export default {
     display: "block",
     width: "1",
     height: "1",
+    backgroundColor: "rgba(0, 0, 0, 0.15)",
     backdropFilter: "blur(10px)",
     zIndex: 0,
   },
@@ -68,7 +69,10 @@ export default {
   },
 
   productImg: {
+    display: "block",
     width: "30px",
+    height: "30px",
+    objectFit: "contain",
     mb: 0,
   },
 
