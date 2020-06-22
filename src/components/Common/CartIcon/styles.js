@@ -5,6 +5,7 @@ export default {
     alignItems: "center",
     position: "relative",
     textDecoration: "none",
+    transform: ["translateX(-15px)", null, "translateX(0)"],
   },
 
   icon: {
