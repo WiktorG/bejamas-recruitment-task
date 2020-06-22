@@ -43,38 +43,40 @@ export default function ProductSlider() {
     sliderRef.current.slickNext()
   }
 
+  const sliderSettings = {
+    ref: sliderRef,
+    dots: false,
+    arrows: false,
+    draggable: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    centerPadding: 0,
+    infinite: true,
+    responsive: [{
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+      },
+    }, {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+      },
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      },
+    }],
+  }
+
   return (
     <div sx={styles.sliderWrapper}>
       <button sx={styles.arrowLeftWrapper} onClick={slideLeft}>
         <img src={ArrowLeft} sx={styles.arrow} />
       </button>
-      <Slider
-        ref={sliderRef}
-        dots={false}
-        arrows={false}
-        draggable={false}
-        slidesToShow={4}
-        slidesToScroll={1}
-        initialSlide={0}
-        centerPadding={0}
-        infinite
-        responsive={[{
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-          },
-        }, {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 2,
-          },
-        }, {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-          },
-        }]}
-      >
+      <Slider {...sliderSettings}>
         {data.allMarkdownRemark.edges.map(({ node }, i) => (
           <ProductCard
             key={i}
