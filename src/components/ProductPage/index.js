@@ -33,7 +33,7 @@ export default function Product({
 
   return (
     <section sx={styles.productWrapper}>
-      <Row styles={{ justifyContent: "center", alignItems: "center", width: "1" }}>
+      <Row styles={styles.productRow}>
         <Col styles={styles.imgWrapper}>
           <img src={img} alt="product image" sx={styles.img} />
         </Col>

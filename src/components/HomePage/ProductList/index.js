@@ -8,7 +8,7 @@ import styles from "./styles"
 
 export default function ProductList() {
   return (
-    <section sx={{ p: ["60px 0", "60px 0", "105px 0"] }}>
+    <section sx={styles.wrapper}>
       <Row>
         <Col styles={styles.headingWrapper}>
           <Styled.h2 sx={styles.heading}>

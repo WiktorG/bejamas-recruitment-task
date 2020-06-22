@@ -9,6 +9,12 @@ export default {
     fontFamily: "product",
   },
 
+  productRow: {
+    justifyContent: "center",
+    alignItems: "center",
+    width: "1",
+  },
+
   imgWrapper: {
     width: ["1", "1", "1/2"],
     textAlign: ["center", "center", "right"],

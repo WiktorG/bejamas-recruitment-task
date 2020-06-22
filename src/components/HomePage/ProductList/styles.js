@@ -1,4 +1,8 @@
 export default {
+  wrapper: {
+    p: ["60px 0", "60px 0", "105px 0"],
+  },
+
   headingWrapper: {
     textAlign: ["center", null, "left"],
     br: {

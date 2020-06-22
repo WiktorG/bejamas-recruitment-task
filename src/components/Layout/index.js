@@ -9,7 +9,7 @@ import { Global } from "@emotion/core"
 import { closeCart } from "redux/actions/cartActions"
 import { cart as cartSelector } from "redux/selectors/cartSelectors"
 
-import Header from "components/Header"
+import Header from "components/Common/Header"
 import Cart from "components/Common/Cart"
 
 export default function Layout({ children }) {
