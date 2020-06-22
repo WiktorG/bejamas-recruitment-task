@@ -38,6 +38,7 @@ export default {
     borderWidth: "3px",
     borderStyle: "solid",
     borderRadius: "4px",
+    transform: ["translateX(-15px)", "transformX(0)", null, "translateX(10px)", "translateX(50px)"],
     m: 0,
     p: 0,
     ml: "auto",
