@@ -10,10 +10,10 @@ Proof of concept build on gatsby with a basic e-shop functionality.
 
 ## TODO
 
-- [ ] add product list section to homepage
-- [ ] cart component
-- [ ] add "add product to cart" functionality
-- [ ] add details page for each product
+- [x] add product list section to homepage
+- [x] cart component
+- [x] add "add product to cart" functionality
+- [x] add details page for each product
 
 ## Detailed requirements
 
